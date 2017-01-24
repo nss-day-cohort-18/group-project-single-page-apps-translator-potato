@@ -20,8 +20,8 @@ translateButton.addEventListener('click', function(){
 
 		if (languageSelected.value === "russian") {
 			outputText = Translate.toRussian(longSentence[i].toLowerCase());
-		} else if (languageSelected.value === "spanish") {
-			outputText = Translate.toSpanish(longSentence[i].toLowerCase());
+		} else if (languageSelected.value === "morse") {
+			outputText = Translate.toMorse(longSentence[i].toLowerCase());
 		} else if (languageSelected.value === "elvish") {
 			outputText = Translate.toElvish(longSentence[i].toLowerCase());
 		} else {
