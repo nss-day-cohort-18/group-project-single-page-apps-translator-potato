@@ -5,9 +5,16 @@
 </head>
 <body>
 	<h1>Tripple Threat Translator</h1>
-	TRANSLATE HERE:<br><textarea name="Message" rows="4" cols="30"></textarea>
+	Translate Here:<br><textarea name="Message" rows="4" cols="30"></textarea>
 	<br>
-	<button type="submit">Submit</button>
+	<select>
+		<option selected disabled="">Pick a Language</option>
+		<option value="russian">Russian</option>
+		<option value="spanish">Spanish</option>
+		<option value="elvish">Elvish</option>
+	</select>
+	<br>
+	<button type="button" id="translate-button">Submit</button>
 	<div id="translated">
 		
 	</div>
