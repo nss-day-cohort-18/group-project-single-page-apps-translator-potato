@@ -1,7 +1,7 @@
 # Language Translator
 
 ## Setup
-
+ 
 ```bash
 mkdir -p ~/workspace/group-projects/translator && cd $_
 ```

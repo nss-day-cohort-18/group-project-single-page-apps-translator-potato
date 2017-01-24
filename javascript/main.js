@@ -35,5 +35,6 @@ translateButton.addEventListener('click', function(){
 
 	var translatedWords = finishedArray.join("");
 	outputField.innerHTML = translatedWords;
+	responsiveVoice.speak(translatedWords);
 
 });
