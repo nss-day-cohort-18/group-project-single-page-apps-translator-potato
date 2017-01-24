@@ -1,8 +1,5 @@
 "use strict";
 
-var translateButton = document.getElementById("translate-button");
-var languageSelected = document.getElementById("language-selected");
-
 var Translate = (function(){
 	var russian = {
 		merry: "веселый",
@@ -20,5 +17,3 @@ var Translate = (function(){
 	};
 
 })();
-
-
