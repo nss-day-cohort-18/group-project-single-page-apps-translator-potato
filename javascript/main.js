@@ -1,18 +1,33 @@
+var translateButton = document.getElementById("translate-button");
+var languageSelected = document.getElementById("language-selected");
+
 translateButton.addEventListener('click', function(){
 	var inputField = document.getElementById("input-field").value;
 	var outputField = document.getElementById("translated");
 	var outputText;
 
-	if (languageSelected.value === "russian") {
-		outputText = Translate.toRussian(inputField);
-	} else if (languageSelected.value === "spanish") {
-		outputText = Translate.toSpanish(inputField);
-	} else if (languageSelected.value === "elvish") {
-		outputText = Translate.toElvish(inputField);
-	} else {
-		alert("Please select a language")
+	var longSentence = inputField.split(" ");
+	var finishedArray = [];
+
+	for (var i = 0; i < longSentence.length; i++) {
+
+
+		if (languageSelected.value === "russian") {
+			outputText = Translate.toRussian(longSentence[i]);
+		} else if (languageSelected.value === "spanish") {
+			outputText = Translate.toSpanish(longSentence[i]);
+		} else if (languageSelected.value === "elvish") {
+			outputText = Translate.toElvish(longSentence[i]);
+		} else {
+			alert("Please select a language")
+		}
+
+		finishedArray.push(outputText);
+		finishedArray.push(" ");
+		
 	}
 
-	outputField.innerHTML = outputText;
+	var translatedWords = finishedArray.join("");
+	outputField.innerHTML = translatedWords;
 
-})
+});
