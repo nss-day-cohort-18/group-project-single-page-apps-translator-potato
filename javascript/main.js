@@ -1,3 +1,11 @@
+$(document).ready(function() {
+    $('select').material_select();
+  });
+
+
+
+
+
 translateButton.addEventListener('click', function(){
 	var inputField = document.getElementById("input-field").value;
 	var outputField = document.getElementById("translated");

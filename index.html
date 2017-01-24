@@ -2,25 +2,52 @@
 <html>
 <head>
 	<title>Languege translator</title>
+	 <!-- Compiled and minified CSS -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	<script
+ 	 src="https://code.jquery.com/jquery-3.1.1.min.js"
+  	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  	crossorigin="anonymous"></script>
+ 	 <!-- Compiled and minified JavaScript -->
+ 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+          
 </head>
 <body>
-	<h1>
-		Tripple Threat Translator
-	</h1>
-		<label>Translate Here:</label>
-	<br>
-		<textarea name="Message" rows="4" cols="30" id="input-field"></textarea>
-	<br>
-	<select id="language-selected">
-		<option selected disabled="">Pick a Language</option>
-		<option value="russian">Russian</option>
-		<option value="morse">Morse</option>
-		<option value="elvish">Elvish</option>
-	</select>
-	<br>
-	<button type="button" id="translate-button">Translate</button>
-	<div id="translated">
-		
+	<div class="row">
+		<h1 class="col s8 offset-s2">
+			Tripple Threat Translator
+		</h1>
+	</div>
+	<div class="row">
+	    <form class="col s12">
+	      <div class="row">
+	        <div class="input-field col s4 offset-s4">
+	          <textarea id="input-field" class="materialize-textarea"></textarea>
+	          <label for="input-field">Translate Here:</label>
+	        </div>
+	      </div>
+	    </form>
+  	</div>
+  	<div class="row">
+		<div class="input-field col s4 offset-s4">
+		    <select id="language-selected">
+		      <option value="" disabled selected>Choose your option</option>
+		      <option value="russian">Russian</option>
+		      <option value="morse">Morse</option>
+		      <option value="elvish">Elvish</option>
+		    </select>
+		    <label>Pick a Language</label>
+		 </div>
+	</div>
+
+
+	<div class="row">
+		<button type="button" id="translate-button" class="btn waves-effect waves-light col s4 offset-s4">Translate</button>
+	</div>
+
+
+	<div class="row">
+		<div id="translated" class="col s8 offset-s2 flow-text card-panel teal lighten-4"></div>
 	</div>
 
 	<script src="javascript/a.js" type="text/javascript" charset="utf-8"></script>
