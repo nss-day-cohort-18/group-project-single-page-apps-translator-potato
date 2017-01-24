@@ -4,19 +4,27 @@
 	<title>Languege translator</title>
 </head>
 <body>
-	<h1>Tripple Threat Translator</h1>
-	Translate Here:<br><textarea name="Message" rows="4" cols="30"></textarea>
+	<h1>
+		Tripple Threat Translator
+	</h1>
+		<label>Translate Here:</label>
 	<br>
-	<select>
+		<textarea name="Message" rows="4" cols="30" id="input-field"></textarea>
+	<br>
+	<select id="language-selected">
 		<option selected disabled="">Pick a Language</option>
 		<option value="russian">Russian</option>
 		<option value="spanish">Spanish</option>
 		<option value="elvish">Elvish</option>
 	</select>
 	<br>
-	<button type="button" id="translate-button">Submit</button>
+	<button type="button" id="translate-button">Translate</button>
 	<div id="translated">
 		
 	</div>
+
+	<script src="javascript/a.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/b.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/d.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
