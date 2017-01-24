@@ -1,10 +1,16 @@
+$(document).ready(function() {
+    $('select').material_select();
+  });
+
 var translateButton = document.getElementById("translate-button");
 var languageSelected = document.getElementById("language-selected");
+
 
 translateButton.addEventListener('click', function(){
 	var inputField = document.getElementById("input-field").value;
 	var outputField = document.getElementById("translated");
 	var outputText;
+
 
 	var longSentence = inputField.split(" ");
 	var finishedArray = [];
@@ -19,12 +25,12 @@ translateButton.addEventListener('click', function(){
 		} else if (languageSelected.value === "elvish") {
 			outputText = Translate.toElvish(longSentence[i].toLowerCase());
 		} else {
-			alert("Please select a language")
+			alert("Please select a language");
+			return;
 		}
 
 		finishedArray.push(outputText);
-		finishedArray.push(" ");
-		
+		finishedArray.push(" ");		
 	}
 
 	var translatedWords = finishedArray.join("");
