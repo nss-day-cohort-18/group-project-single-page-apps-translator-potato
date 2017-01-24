@@ -5,8 +5,8 @@ translateButton.addEventListener('click', function(){
 
 	if (languageSelected.value === "russian") {
 		outputText = Translate.toRussian(inputField);
-	} else if (languageSelected.value === "spanish") {
-		outputText = Translate.toSpanish(inputField);
+	} else if (languageSelected.value === "morse") {
+		outputText = Translate.toMorse(inputField);
 	} else if (languageSelected.value === "elvish") {
 		outputText = Translate.toElvish(inputField);
 	} else {
