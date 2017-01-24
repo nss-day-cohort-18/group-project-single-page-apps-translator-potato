@@ -13,11 +13,11 @@ translateButton.addEventListener('click', function(){
 
 
 		if (languageSelected.value === "russian") {
-			outputText = Translate.toRussian(longSentence[i]);
+			outputText = Translate.toRussian(longSentence[i].toLowerCase());
 		} else if (languageSelected.value === "spanish") {
-			outputText = Translate.toSpanish(longSentence[i]);
+			outputText = Translate.toSpanish(longSentence[i].toLowerCase());
 		} else if (languageSelected.value === "elvish") {
-			outputText = Translate.toElvish(longSentence[i]);
+			outputText = Translate.toElvish(longSentence[i].toLowerCase());
 		} else {
 			alert("Please select a language")
 		}
