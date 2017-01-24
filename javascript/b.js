@@ -11,7 +11,7 @@ var Translate = (function(originalTranslate){
 	};
 
 	originalTranslate.toSpanish = function(eng){
-		return landSpan[eng];
+		return langSpan[eng];
 	};
 	
 	return originalTranslate;
