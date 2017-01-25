@@ -14,7 +14,7 @@ var Translate = (function(originalTranslate){
 		simply: " simplui",
 		walk: "padad",
 		into: "into",
-		mordor: "Mordor"
+		mordor: "Mordor",
 		they: "hain",
 		may: "lothron",
 		take: "take",
