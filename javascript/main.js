@@ -2,6 +2,10 @@ $(document).ready(function() {
   $('select').material_select();
   });
 
+$(document).ready(function(){
+      $('.parallax').parallax();
+    });
+
 var translateButton = document.getElementById("translate-button");
 var languageSelected = document.getElementById("language-selected");
 
