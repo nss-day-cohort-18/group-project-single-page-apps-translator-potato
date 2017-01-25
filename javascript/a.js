@@ -1,18 +1,18 @@
 "use strict";
 
 var Translate = (function(){
-	var russian = {
-		merry: "веселый",
-		christmas: "рождество",
-		and: "а также",
-		happy: "счастливый",
-		new: "новый",
-		year: "год"
+	var latin = {
+		merry: "epulari",
+		christmas: "christmas",
+		and: "et",
+		happy: "laeta",
+		new: "novus",
+		year: "anno"
 	};
 
 	return {
-		toRussian: function(wordToTranslate) {
-			return russian[wordToTranslate];
+		toLatin: function(wordToTranslate) {
+			return latin[wordToTranslate];
 		}
 	};
 
