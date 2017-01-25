@@ -1,3 +1,7 @@
+$(document).ready(function() {
+  $('select').material_select();
+  });
+
 var translateButton = document.getElementById("translate-button");
 var languageSelected = document.getElementById("language-selected");
 
@@ -20,6 +24,7 @@ translateButton.addEventListener('click', function(){
 			outputText = Translate.toElvish(longSentence[i].toLowerCase());
 		} else {
 			alert("Please select a language")
+			return;
 		}
 
 		finishedArray.push(outputText);
